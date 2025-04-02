@@ -3,7 +3,7 @@ import { RiExpandUpDownFill } from "react-icons/ri";
 export const TaskBar = () => {
   return (
     <>
-      <div className="TaskBar border-3 border-gray-400 bg-gray-100 w-full h-[8%] px-[3rem] py-[.8rem] ">
+      <div className="TaskBar border-[1px] border-gray-400 bg-gray-100 w-full h-[8%] px-[3rem] py-[.8rem] ">
         <div className="flex items-center  justify-between">
           {/* checkbox */}
           <div className="checkbox mt-1 w-[1rem]">
@@ -13,12 +13,17 @@ export const TaskBar = () => {
             />
           </div>
           {/* todo */}
-          <div className="todo mr-[15rem] -ml-[9rem]">
+          <div className="todo mr-[15rem] -ml-[1rem]">
             <h1 className=" text-[1.1rem] font-medium ">To do</h1>
           </div>
           {/* Prority */}
           <div className="priority flex items-center gap-2">
             <h1 className=" text-[1.1rem] font-medium">Priority</h1>
+            <RiExpandUpDownFill className="" />
+          </div>
+          {/* due Data */}
+          <div className="Due_Date flex items-center gap-2">
+            <h1 className=" text-[1.1rem] font-medium">Due Date</h1>
             <RiExpandUpDownFill className="" />
           </div>
           {/* Associatede */}
